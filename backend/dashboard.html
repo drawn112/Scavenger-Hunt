@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" type="image/png" href="https://realjoshlee.tk/assets/images/favicon.png"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet"> 
+    <!--font-family: 'Raleway', sans-serif; - font-family: 'Montserrat', sans-serif; - font-family: 'Open Sans', sans-serif;  -  font-family: 'Anton', sans-serif;-->
+  </head>
+
+  <body>
+    <div class="nav">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#users">User: Admin</a>
+        <br>
+        <a href="dashboard.html">Home</a>
+        <a href="https://thejpechunt.tk">Front-End</a>
+        <br>
+        <a href="index.html">Log Out</a>
+        
+      </div>
+      <div class="topnav">
+        <p><span style="font-size:30px;cursor:pointer" onclick="openNav()">&nbsp; &#9776;</span></p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    
+    <div class="body">
+      <div class="information">
+        <br>
+      <div class="section">
+        <div class="passwordgen">
+          <h4>Generate A Password</h4>
+          <form>
+            <p><input class="passgenbutton" onClick="generatepassword8char()" type="button" value="Generate Password"/>&nbsp;<input placeholder="Generated Password" class="passgenbox" type="text" id="passwordinput8"/></p>
+          </form>
+        </div>
+      </div>
+
+
+
+
+      <br>
+      <div class="section">
+        <h4>Admin Bypass Links</h4>
+        <a href="https://thejpechunt.tk/backend/dashboard.html">Admin Dashboard</a>
+      </div>
+
+      <br>
+      <div class="section">
+        <h4>Login Pages</h4>
+        <a href="loginDownloadExternal.min.html" download>Download Login (External Site)</a>
+        <p>Downloading this login will allow you to use our servers to provide the passwords for you login. This will not contain our logo.</p>
+
+        <br>
+
+        <a href="loginDownloadInternal.html" download>Download Login (For RealJoshLee)</a>
+        <p>Downloading this login will allow you to use our servers to provide the passwords for you login. This will contain our logo.</p>
+
+        <br>
+
+        <p><xmp><script src="https://backend.realjoshlee.tk/script.js"></script></xmp></p>
+        <p>Copy the code above to use our servers, but your own login page.</p>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+        <a class="nav-link" id="footerbutton" href="index.html"><b>Log Out</b></a>
+
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<style>
+div.information {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+  
+a.logout {
+  color: #191919;
+  border: 1px solid #191919;
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+  
+a.logout:hover {
+  background-color: red;
+  border: 1px solid red;
+  color: #fff;
+  transition-duration: 0.3s;
+}
+  
+div.topnav {
+  background-color: #ededed;
+  width: 100%;
+  position: fixed;
+}
+  
+html, body {
+  font-family: 'Montserrat', Arial;
+  color: #191919;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #fff;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 25px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+html, body, div.body {
+  background-color: #ededed;
+  height: 100%;
+}
+
+div.body {
+  padding: 10px;
+}
+
+div.section {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.30);
+  -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.30);
+  box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.30);
+}
+
+input.passgenbutton {
+  background-color: #0096ff;
+  color: white;
+  border: transparent;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.20);
+  -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.20);
+  box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.20);
+}
+
+input.passgenbutton:hover {
+  background-color: #191919;
+  transition-duration: 0.3s;
+}
+
+input.passgenbox {
+  border-radius: 5px;
+  border: 1px #333 solid;
+  padding-left: 5px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+img.logo {
+  height: 30px;
+  width: 30px;
+}
+
+a#footerbutton {
+  border: 1px #191919 solid;
+  border-radius: 50px;
+  color: #191919;
+  text-align: center;
+}
+
+a#footerbutton:hover {
+  background-color: red;
+  border: 1px red solid;
+  color: #fff;
+
+  transition-duration: 0.3s;
+}
+
+a#button:hover {
+  color: red;
+
+  transition-duration: 0.3s;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  
+  
+  // 8 Character Password
+            // Origional code found here https://code.sololearn.com/WMLm7mRuVroc/
+            function generatepassword8char() {
+              var char;
+              var passcharset;
+              // The lenngth/strength of the password
+              var passstrength = 8;
+              // The characters that are in the password
+              var charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789!@#$%^&*()_-+";
+              // Where the password is generated
+              var password = "";
+              for (i = 0; i < passstrength; i++) {
+                passcharset = charset.charAt(char);
+                // Generates a random password each time the "Generate Password" button is clicked
+                char = Math.floor(Math.random() * charset.length);
+                // Generates a random password using the charset
+                password = password + passcharset;
+                }
+              // The output id for the input box "passwordinput"
+              passwordinput8.value = password;
+            }
+
+            
+function passHide1() {
+  var x = document.getElementById("passInput1");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+function passHide2() {
+  var x = document.getElementById("passInput2");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+function passHide3() {
+  var x = document.getElementById("passInput3");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+s
+</script>
