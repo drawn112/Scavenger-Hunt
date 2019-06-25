@@ -117,7 +117,7 @@ var game = {
     this.over = true;
     var perfect = Math.pow(2, this.rings) - 1;
     $('.c2').prepend("<div class='gameOver report'></div>")
-    $('.c2').prepend("<div class='gameOver big'>YOU WIN!</div>");
+    $('.c2').prepend("<div class='gameOver big'>The Flag is J3PWNha6MS8cnh2s </div>");
     $('.report').html("<p>Your Score: " + this.moves + "</p><p>Perfect: " + perfect + "</p");
   },
   reset: function() {

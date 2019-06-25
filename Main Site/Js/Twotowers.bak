@@ -43,6 +43,6 @@
 	{
 		if(form.userid.value == form.pswrd.value)
 		{
-			alert("Flag: XXX");
+			alert("You are ready to start go to XXXX.XXX.tk");
 		}
 	}

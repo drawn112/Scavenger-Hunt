@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Persistance is key</title>
+  </head>
+  <body>
+    <p>Persistance is key</p>
+    <form name="login">
+    <p>
+      <input readonly type="text" name="userid" id="number1"/>
+      <br>
+      <button onClick="numberpicker1()" type="button">Random Number</button>
+    </p>
+    <p>
+      <input readonly type="text" name="pswrd" id="number2"/>
+      <br>
+      <button onClick="numberpicker2()" type="button">Random Number</button>
+    </p>
+    <br>
+    <input class="loginbutton" type="button" onclick="check(this.form)" value="Login"/>
+    </form>
+  </body>
+</html>
+
+<script type="text/javascript" src="/js/Two numbers.js"></script>
+  
+<style>
+    html, body {
+      font-family: 'Montserrat', Arial;
+      background-color: #191919;
+      color: #fff;
+      text-align: center;
+      padding-top: 50px;
+    }
+    
+    input {
+      color: #fff;
+      background-color: transparent;
+      text-align: center;
+      border: 2px solid grey;
+      font-size: 50px;
+      width: 200px;
+      border-radius: 20px;
+    }
+    
+    button {
+      color: #fff;
+      border: 2px solid #fff;
+      background-color: transparent;
+      width: 200px;
+      border-radius: 20px;
+      height: 50px;
+      font-weight: bold;
+    }
+    
+    button:hover {
+      color: #191919;
+      background-color: #fff;
+      transition-duration: 0.3s;
+    }
+
+    input.loginbutton {
+      border: 1px solid #fff;
+    }
+
+    input.loginbutton:hover {
+      color: #191919;
+      background-color: #fff;
+      transition-duration: 0.3s;
+    }
+      
+  </style>
