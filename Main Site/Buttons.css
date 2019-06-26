@@ -1,0 +1,49 @@
+button {
+	display: inline-block;
+	background: none;
+	color: inherit;
+	border: none;
+	font: inherit;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 50px;
+}
+
+#button-0 {
+    background-image: url( 'https://i.ya-webdesign.com/images/orange-dot-png-6.png' );
+	background-size: 50px 50px;
+    height: 50px;  
+    width: 50px;
+}
+#button-4 {
+    background-image: url( 'https://i.ya-webdesign.com/images/orange-dot-png-6.png' );
+	background-size: 50px 50px;
+    height: 50px;  
+    width: 50px;
+}
+#button-9 {
+    background-image: url( 'https://i.ya-webdesign.com/images/orange-dot-png-6.png' );
+	background-size: 50px 50px;
+    height: 50px;  
+    width: 50px;
+}
+#button-hash {
+    background-image: url( 'https://i.ya-webdesign.com/images/orange-dot-png-6.png' );
+	background-size: 50px 50px;
+    height: 50px;  
+    width: 50px;
+}
+#button-6 {
+    background-image: url( 'https://i.ya-webdesign.com/images/orange-dot-png-6.png' );
+	background-size: 50px 50px;
+    height: 50px;  
+    width: 50px;
+}
+#button-2 {
+    background-image: url( 'https://ya-webdesign.com/images600_/blue-dot-png-4.png' );
+	background-size: 50px 50px;
+    height: 50px;  
+    width: 50px;
+}
