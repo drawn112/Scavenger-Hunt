@@ -41,11 +41,16 @@
 
     function check(form)
 	{
-		if(form.userid.value == form.pswrd.value)
+    setTimeout(function(){
+      //do what you need here
+
+    if(form.userid.value == form.pswrd.value)
 		{
       alert("You are ready to start the actual test")
       setTimeout(function(){
         window.location.href = 'https://thepuzzle.tk';
      }, 500);
+    }
+    }, 200);
 }
-		}
+		
