@@ -45,7 +45,7 @@
 		{
       alert("You are ready to start the actual test")
       setTimeout(function(){
-        window.location.href = 'https://www.tutorialspoint.com/javascript/';
+        window.location.href = 'https://thepuzzle.tk';
      }, 500);
 }
 		}
