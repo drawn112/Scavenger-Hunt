@@ -43,6 +43,9 @@
 	{
 		if(form.userid.value == form.pswrd.value)
 		{
-			alert("You are ready to start go to XXXX.XXX.tk");
+      alert("You are ready to start the actual test")
+      setTimeout(function(){
+        window.location.href = 'https://www.tutorialspoint.com/javascript/';
+     }, 500);
+}
 		}
-	}
