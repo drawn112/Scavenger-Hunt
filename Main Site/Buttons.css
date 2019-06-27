@@ -43,43 +43,43 @@ button {
     width: 50px;
 }
 #button-2 {
-    background-image: url( 'https://thejpechunt.tk/assets/images/blue-dot.png' );
+    background-image: url( 'https://thepuzzle.tk/assets/images/blue-dot.png' );
 	background-size: 50px 50px;
     height: 50px;  
     width: 50px;
 }
 #button-5 {
-    background-image: url( 'https://thejpechunt.tk/assets/images/blue-dot.png' );
+    background-image: url( '/assets/images/blue-dot.png' );
 	background-size: 50px 50px;
     height: 50px;  
     width: 50px;
 }
 #button-8 {
-    background-image: url( 'https://thejpechunt.tk/assets/images/blue-dot.png' );
+    background-image: url( '/assets/images/blue-dot.png' );
 	background-size: 50px 50px;
     height: 50px;  
     width: 50px;
 }
 #button-1 {
-    background-image: url( 'https://thejpechunt.tk/assets/images/green-dot.png' );
+    background-image: url( '/assets/images/green-dot.png' );
 	background-size: 50px 50px;
     height: 50px;  
     width: 50px;
 }
 #button-3 {
-    background-image: url( 'https://thejpechunt.tk/assets/images/green-dot.png' );
+    background-image: url( '/assets/images/green-dot.png' );
 	background-size: 50px 50px;
     height: 50px;  
     width: 50px;
 }
 #button-7 {
-    background-image: url( 'https://thejpechunt.tk/assets/images/green-dot.png' );
+    background-image: url( '/assets/images/green-dot.png' );
 	background-size: 50px 50px;
     height: 50px;  
     width: 50px;
 }
 #button-ast {
-    background-image: url( 'https://thejpechunt.tk/assets/images/red-dot.png' );
+    background-image: url( '/assets/images/red-dot.png' );
     background-size: 50px 50px;
     color: #f46a41;
     height: 50px;  
