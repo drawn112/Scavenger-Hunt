@@ -41,7 +41,7 @@ u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
+footer, Header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -2387,7 +2387,7 @@ ul.icons {
     #footer {
       padding: 2rem 0 0.1rem 0 ; } }
 
-/* Header */
+/* header */
 body {
   padding-top: 3.25rem; }
   body:before {
